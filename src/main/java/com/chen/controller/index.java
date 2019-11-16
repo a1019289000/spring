@@ -15,4 +15,12 @@ public class index {
     public book x(String name) {
         return bookimpl.getbook(name);
     }
+    @RequestMapping("test")
+    public String x(){
+        System.out.println("xxxxxxxxxxx");
+        book book1=new book();
+        book1.setId(10);
+        book1.setName("java");
+        return "123456789";
+    }
 }
