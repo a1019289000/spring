@@ -11,17 +11,15 @@
 chenchen
 </div>
 <script>
-      //  $(document).ready(
-        function ff() {
-            alert("x");
+      $(document).ready(
+        function() {
             $.ajax({
                 "type": "GET",
                 "url": "http://127.0.0.1:8080/test",
                 "dataType": "json",
                 "success": function (data) {
                     var book=data;
-                    alert(456);
-                    $("#jquery").val(book.name);
+                    $("#jquery").val(book.id);
                 },
                 "error": function () {
                     alert("error");
@@ -29,8 +27,7 @@ chenchen
 
             })
         }
-        ff();
-   //  )
+     )
 
 </script>
 
