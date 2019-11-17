@@ -16,11 +16,11 @@ public class index {
         return bookimpl.getbook(name);
     }
     @RequestMapping("test")
-    public String x(){
+    public book x(){
         System.out.println("xxxxxxxxxxx");
         book book1=new book();
         book1.setId(10);
         book1.setName("java");
-        return "123456789";
+        return book1;
     }
 }
