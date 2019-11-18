@@ -17,7 +17,6 @@ public class index {
     }
     @RequestMapping("test")
     public book x(){
-        System.out.println("xxxxxxxxxxx");
         book book1=new book();
         book1.setId(10);
         book1.setName("java");
